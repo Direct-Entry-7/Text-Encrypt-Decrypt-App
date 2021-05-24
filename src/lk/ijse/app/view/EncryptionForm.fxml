@@ -4,16 +4,18 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.app.view.EncryptionForm">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.app.controller.EncryptionFormController">
    <children>
-      <TextField layoutX="244.0" layoutY="80.0" />
-      <Label layoutX="95.0" layoutY="93.0" text="Enter Text" />
-      <TextField layoutX="244.0" layoutY="174.0" />
-      <Label layoutX="95.0" layoutY="179.0" text="Key" />
-      <Button layoutX="286.0" layoutY="238.0" mnemonicParsing="false" text="Generate" />
-      <Label layoutX="97.0" layoutY="324.0" text="Ciper :" />
-      <TextField layoutX="223.0" layoutY="311.0" prefHeight="26.0" prefWidth="347.0" />
+      <TextField fx:id="textText" layoutX="101.0" layoutY="80.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter your Text" />
+      <TextField fx:id="txtKey" layoutX="101.0" layoutY="145.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter your key" />
+      <Button layoutX="269.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnEncript_OnAction" prefHeight="52.0" prefWidth="96.0" text="Encrypt" />
+      <TextField fx:id="txtCiper" layoutX="101.0" layoutY="325.0" prefHeight="26.0" prefWidth="431.0" promptText="Ciper will be displayed here" />
+      <Label layoutX="172.0" layoutY="22.0" text="Encryption Form">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
