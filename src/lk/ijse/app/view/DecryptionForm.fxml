@@ -13,7 +13,7 @@
             <Font size="35.0" />
          </font>
       </Label>
-      <TextField fx:id="txtCiper" layoutX="111.0" layoutY="90.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter your Ciper" />
+      <TextField fx:id="txtCipher" layoutX="111.0" layoutY="90.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter your Cipher" />
       <TextField fx:id="txtKey" layoutX="111.0" layoutY="155.0" prefHeight="26.0" prefWidth="431.0" promptText="Enter your key" />
       <Button layoutX="279.0" layoutY="210.0" mnemonicParsing="false" onAction="#btnDecrypt_OnAction" prefHeight="52.0" prefWidth="96.0" text="Decrypt" />
       <TextField fx:id="txtText" layoutX="111.0" layoutY="335.0" prefHeight="26.0" prefWidth="431.0" promptText="Your original text will be displayed here" />
